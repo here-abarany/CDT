@@ -18,6 +18,8 @@
 #include <deque>
 #include <stdexcept>
 
+CDT_ENSURE_PRECISE_MATH
+
 namespace CDT
 {
 
@@ -2215,5 +2217,7 @@ void Triangulation<T, TNearPointLocator>::tryInitNearestPointLocator()
 }
 
 } // namespace CDT
+
+CDT_RESTORE_MATH_SETTINGS
 
 #endif // header-guard
